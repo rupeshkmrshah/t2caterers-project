@@ -1,0 +1,8 @@
+Disallow: /connection.php
+Disallow: /data.php
+Disallow: /error.php
+Disallow: /error_logs
+Disallow: /thank-you.php
+Disallow: /book-now.php
+Disallow: /header.php
+Disallow: /footer.php

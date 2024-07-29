@@ -1,0 +1,29 @@
+[25-Jul-2024 17:22:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'tcaterer_dbcontact.contact_entries' doesn't exist in /home1/tcaterer/public_html/connection.php:21
+Stack trace:
+#0 /home1/tcaterer/public_html/connection.php(21): mysqli->prepare('SELECT phone Fr...')
+#1 {main}
+  thrown in /home1/tcaterer/public_html/connection.php on line 21
+[25-Jul-2024 17:27:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fullname' in 'field list' in /home1/tcaterer/public_html/connection.php:29
+Stack trace:
+#0 /home1/tcaterer/public_html/connection.php(29): mysqli->prepare('INSERT Into tca...')
+#1 {main}
+  thrown in /home1/tcaterer/public_html/connection.php on line 29
+[25-Jul-2024 17:29:08 UTC] PHP Warning:  Undefined array key "fullname" in /home1/tcaterer/public_html/connection.php on line 2
+[25-Jul-2024 17:29:08 UTC] PHP Warning:  Undefined array key "email" in /home1/tcaterer/public_html/connection.php on line 3
+[25-Jul-2024 17:29:08 UTC] PHP Warning:  Undefined array key "phone" in /home1/tcaterer/public_html/connection.php on line 4
+[25-Jul-2024 17:29:08 UTC] PHP Warning:  Undefined array key "comment" in /home1/tcaterer/public_html/connection.php on line 5
+[25-Jul-2024 17:33:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fullname' in 'field list' in /home1/tcaterer/public_html/connection.php:29
+Stack trace:
+#0 /home1/tcaterer/public_html/connection.php(29): mysqli->prepare('INSERT Into tca...')
+#1 {main}
+  thrown in /home1/tcaterer/public_html/connection.php on line 29
+[25-Jul-2024 17:44:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fullname' in 'field list' in /home1/tcaterer/public_html/connection.php:29
+Stack trace:
+#0 /home1/tcaterer/public_html/connection.php(29): mysqli->prepare('INSERT Into tca...')
+#1 {main}
+  thrown in /home1/tcaterer/public_html/connection.php on line 29
+[25-Jul-2024 17:48:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fullname' in 'field list' in /home1/tcaterer/public_html/connection.php:29
+Stack trace:
+#0 /home1/tcaterer/public_html/connection.php(29): mysqli->prepare('INSERT Into tca...')
+#1 {main}
+  thrown in /home1/tcaterer/public_html/connection.php on line 29
