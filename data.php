@@ -1,9 +1,9 @@
 <?php
 // Database connection
 $servername = "localhost";
-$username = "tcaterer_dbentries";
-$password = "T2Caterers@2024";
-$dbname = "tcaterer_dbcontact";
+$username = "enter_dbName";
+$password = "enter_dbPassword";
+$dbname = "enter_dbName";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
