@@ -6,8 +6,8 @@
 
     if (!empty($fullname) || !empty($email) || !empty($phone) || !empty($comments)){
         $host = "localhost";
-        $dbUsername = "tcaterer_dbentries";
-        $dbPassword = "T2Caterers@2024";
+        $dbUsername = "enter_dbUsername";
+        $dbPassword = "enter_dbPassword";
         $dbName = "tcaterer_dbcontact";
         
         // Create Connection
@@ -15,8 +15,8 @@
         if (mysqli_connect_error()){
             die('Connect Error('. mysqli_connect_errno(). ')'. mysqli_connect_error ());
         } else {
-            $SELECT = "SELECT phone FROM tcaterer_dbentries WHERE phone = ? LIMIT 1";
-            $INSERT = "INSERT INTO tcaterer_dbentries (fullname, email, phone, comments) VALUES (?, ?, ?, ?)";
+            $SELECT = "SELECT phone FROM table_name WHERE phone = ? LIMIT 1";
+            $INSERT = "INSERT INTO table_name (fullname, email, phone, comments) VALUES (?, ?, ?, ?)";
             
             // Prepare statement
             $stmt = $conn->prepare($SELECT);
@@ -33,7 +33,7 @@
                 $stmt->execute();
                 
                 // Send email
-                $to = "info@t2caterers.com";
+                $to = "example@domain.com";
                 $subject = "New Contact Form Submission by ".$fullname;
                 $message = "
                 Name: $fullname\n
@@ -42,7 +42,7 @@
                 Message: $comments
                 ";
                 $headers = "From: $email\r\n";
-                $headers .= "CC: t2caterers@gmail.com";  // Add CC email address here
+                $headers .= "CC: example2@domain.com";  // Add CC email address here
 
                 if (mail($to, $subject, $message, $headers)) {
                     include('thank-you.php');
