@@ -8,7 +8,7 @@
         $host = "localhost";
         $dbUsername = "enter_dbUsername";
         $dbPassword = "enter_dbPassword";
-        $dbName = "tcaterer_dbcontact";
+        $dbName = "enter_dbName";
         
         // Create Connection
         $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
